@@ -15,8 +15,9 @@ class Items extends Component{
     
    addIngredients = (e) => {
         e.preventDefault();
-         console.log(e.target.value)
-         filteredFoods.push(e.target.value)
+         const color=document.getElementById('color')
+         console.log(color.value)
+         filteredFoods.unshift(e.target.value)
          this.setState({ingredients: filteredFoods})
          
        
@@ -38,7 +39,8 @@ class Items extends Component{
                <form>
                   
                <label id="label" for="burgerAdd" key={index}>{eachItem.name}</label>
-               <button id="burgerAdd" value={eachItem.name} onClick={ this.addIngredients}> -> </button>  
+               <input id="color" type="hidden" name="color" value={eachItem.color} />
+               <button  id="burgerAdd" value={eachItem.name} onClick={ this.addIngredients}> -> </button>  
                </form>
                </div>
     })
