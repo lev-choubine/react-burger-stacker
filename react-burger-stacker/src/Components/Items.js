@@ -38,20 +38,24 @@ class Items extends Component{
                <form>
                   
                <label for="burgerAdd" key={index}>{eachItem.name}</label>
-               <button id="burgerAdd" value={eachItem.name} onClick={ this.addIngredients}>add to your burger</button>  
+               <button id="burgerAdd" value={eachItem.name} onClick={ this.addIngredients}> -> </button>  
                </form>
                </div>
     })
     return(
-        <div>
+        <div id="flexDad">
+        
         <div id="foodList">
         <h1>Food Here!</h1>
         <ul>
         {ingredients}
         </ul>
         </div>
+        <div id="stack">
+        <div >
         <Stack stackFood={this.state.ingredients} delete={this.wipeOutTheFoodArray}/>
-        
+        </div>
+        </div>
         </div>
     )
 

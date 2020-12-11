@@ -28,18 +28,27 @@
   color: #61dafb;
 }
 #foodList{
-  width:30%;
+  flex: 50%;
   border: 3px solid black;
+  height: 500px;
+  border-radius: 20px;
+}
+
+#flexDad {
+  display: flex;
 }
 
 #stack{
-  width:30%;
-  
-  border: 3px solid black;
+  flex: 50%;
+  border: solid 2px black;
+  height: 500px;
+  border-radius: 20px;
+ 
 }
 
 #burgerAdd {
   display: inline;
+  position: relative;
  
 }
 
