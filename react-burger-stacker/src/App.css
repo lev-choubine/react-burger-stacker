@@ -70,10 +70,14 @@ li {
 
 }
 
-#burgerDiv {
+#buttonDiv{
   position: absolute;
-  bottom: 0px;
+  bottom: 100px;
+  width:200px;
+  left: -50px;
   display: inline-block;
+  border-top: solid 10px black;
+ 
 }
 
 #box {
