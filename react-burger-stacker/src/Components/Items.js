@@ -1,7 +1,7 @@
 import React, { Component  } from 'react';
 import Stack from './Stack'
 
-const filteredFoods = [];
+let filteredFoods = [];
 
 class Items extends Component{
     constructor(props) {
@@ -15,14 +15,20 @@ class Items extends Component{
     
    addIngredients = (e) => {
         e.preventDefault();
-      
+         console.log(e.target.value)
          filteredFoods.push(e.target.value)
          this.setState({ingredients: filteredFoods})
          
        
         
     }
-
+    wipeOutTheFoodArray =(e)=>{
+        e.preventDefault();
+        
+        e.preventDefault()
+      filteredFoods = []
+      this.setState({ingredients:[]})
+    }
   
 
     
@@ -44,7 +50,8 @@ class Items extends Component{
         {ingredients}
         </ul>
         </div>
-        <Stack stackFood={this.state.ingredients}/>
+        <Stack stackFood={this.state.ingredients} delete={this.wipeOutTheFoodArray}/>
+        
         </div>
     )
 
