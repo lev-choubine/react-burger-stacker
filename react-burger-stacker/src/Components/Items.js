@@ -52,7 +52,7 @@ class Items extends Component{
         </ul>
         </div>
         <div id="stack">
-        <div >
+        <div  >
         <Stack stackFood={this.state.ingredients} delete={this.wipeOutTheFoodArray}/>
         </div>
         </div>

@@ -58,6 +58,23 @@ li {
 
 }
 
+#burgerDiv {
+  position: absolute;
+  bottom: 0px;
+  display: inline-block;
+}
+
+#box {
+  position: relative;
+  height: 480px;
+  display: inline-block;
+}
+
+#layer{
+
+  border: solid 2px black;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
