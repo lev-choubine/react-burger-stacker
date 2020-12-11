@@ -34,10 +34,10 @@ class Items extends Component{
     
   render(){
     const ingredients = this.props.food.map((eachItem, index) => {
-        return <div>
+        return <div id="foodItem"> 
                <form>
                   
-               <label for="burgerAdd" key={index}>{eachItem.name}</label>
+               <label id="label" for="burgerAdd" key={index}>{eachItem.name}</label>
                <button id="burgerAdd" value={eachItem.name} onClick={ this.addIngredients}> -> </button>  
                </form>
                </div>
@@ -46,8 +46,8 @@ class Items extends Component{
         <div id="flexDad">
         
         <div id="foodList">
-        <h1>Food Here!</h1>
-        <ul>
+        <h1>Ingredients</h1>
+        <ul >
         {ingredients}
         </ul>
         </div>

@@ -34,8 +34,19 @@
   border-radius: 20px;
 }
 
+#foodItem{
+  margin-right:60px;
+  background-color: bisque;
+  padding-left: 10px;
+  text-align: right;
+}
+
 #flexDad {
   display: flex;
+}
+
+#box2 {
+  margin-left: 10px;
 }
 
 #stack{
@@ -55,6 +66,7 @@
 li {
   list-style-type: none;
   display: inline;
+  margin: 20px;
 
 }
 
